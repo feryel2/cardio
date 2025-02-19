@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter un Module{% endblock %}
+
+{% block body %}
+    <h1>Ajouter un Module</h1>
+
+    {{ form_start(form) }}
+    
+    {% for field in form %}
+        <div>
+            {{ form_label(field) }}
+            {{ form_widget(field) }}
+            {{ form_errors(field) }} <!-- Affichage des erreurs de validation -->
+        </div>
+    {% endfor %}
+    
+    <button type="submit">Enregistrer</button>
+    
+    {{ form_end(form) }}
+{% endblock %}
