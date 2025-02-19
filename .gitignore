@@ -1,0 +1,23 @@
+
+# Ignorer les dépendances Composer
+/vendor/
+
+# Ignorer les fichiers de configuration sensibles
+.env
+.env.local
+/.env.local.php
+/.env.*.local
+
+# Ignorer les logs et fichiers temporaires
+/var/
+var/
+var/cache/
+var/logs/
+
+/config/secrets/prod/prod.decrypt.private.php
+
+# Ignorer le dossier des dépendances Node.js (si tu utilises npm/yarn)
+/node_modules/
+
+# Ignorer les fichiers de cache Symfony
+/var/cache/
